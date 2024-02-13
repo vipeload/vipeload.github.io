@@ -35,6 +35,7 @@
 @media (max-width: 768px) {
     .tablink {
         padding: 10px 12px;
+        height: 50px;
         font-size: 14px;
         &:hover, &.active {
             transform: translateY(-5px);
