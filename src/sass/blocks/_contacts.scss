@@ -1,0 +1,24 @@
+.contacts {
+    padding: 0 0 40px 0;
+    &__card {
+        background-color: $main-color;
+        border-radius: 15px;
+        width: 30%;
+        height: 100px;
+        margin: 0 auto;
+        padding: 15px;
+        &-email {
+            color: #fff;
+            font-size: 20px;
+            a {
+                color: #8c8c8c;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts__card {
+        width: 95%;
+    }
+}

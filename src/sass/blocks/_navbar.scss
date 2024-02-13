@@ -1,0 +1,52 @@
+.navbar {
+    overflow: hidden;
+    background-color: $dark-color;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px -2px 5px rgba(0,0,0,0.5);
+}
+
+.tablink {
+    background-color: $dark-color;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 33.33%;
+    transition: background-color 0.3s, transform 0.3s;
+    &:focus {
+        outline: none;
+    }   
+}
+
+.tablink:hover, .tablink.active {
+    background-color: $main-color;
+    transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+    .tablink {
+        padding: 10px 12px;
+        font-size: 14px;
+        &:hover, &.active {
+            transform: translateY(-5px);
+
+        }
+
+    }
+}
+
+@media (max-width: 480px) {
+    .tablink {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+}
