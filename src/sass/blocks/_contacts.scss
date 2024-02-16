@@ -9,15 +9,22 @@
         padding: 15px;
         &-email {
             color: #fff;
-            font-size: 20px;
             a {
                 color: #8c8c8c;
+                margin-bottom: 10px;
             }
         }
     }
 }
 
 @media (max-width: 768px) {
+    .contacts__card {
+        width: 85%;
+    }
+}
+
+
+@media (max-width: 360px) {
     .contacts__card {
         width: 95%;
     }

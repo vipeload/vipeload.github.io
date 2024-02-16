@@ -1,13 +1,14 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     height: 150px;
     z-index: 3;
-
+    background-color: $main-color;
+    margin-bottom: 30px;
 	&__logo {
 		img {
-			width: 200px;
+			width: 180px;
 		}
 	}
   
@@ -19,7 +20,7 @@
     .header {
         &__logo {
             img {
-                width: 150px;
+                width: 180px;
             }
         }
     }
