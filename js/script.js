@@ -17,6 +17,9 @@ function openPage(pageId, initial = false) {
             }
         }
     }
+    setTimeout(function () {
+        window.scrollTo(0, 0);
+    }, 300);
 }
 
 document.addEventListener("DOMContentLoaded", function() {
