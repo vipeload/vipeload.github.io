@@ -41,6 +41,7 @@
   
     &__description {
         color: #fff;
+        font-size: 11px;
     }
   
     &__developers {
@@ -121,7 +122,7 @@
 
 @media (max-width: 576px) {
     .game {
-        width: 85%;
+        width: 90%;
     }
 
     .game__developers img {
@@ -130,7 +131,7 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 340px) {
     .container {
       padding: 0 10px;
     }

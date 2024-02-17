@@ -18,9 +18,10 @@
 @media (max-width: 480px) {
 
     .header {
+        height: 110px;
         &__logo {
             img {
-                width: 180px;
+                width: 130px;
             }
         }
     }

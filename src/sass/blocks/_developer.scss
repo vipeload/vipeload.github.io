@@ -1,0 +1,107 @@
+.profile {
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    &__info {
+        width: 400px;
+        margin-bottom: 20px;
+        background-color: $main-color;
+        padding: 20px;
+        border-radius: 25px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    &__image {
+        background-color: #fff;
+        border-radius: 25%;
+        width: 150px;
+        margin-bottom: 10px;
+    }
+  
+    &__social { 
+        &-icons {
+            background-color: #ffffff13;
+            width: auto;
+            border-radius: 35px;
+            padding: 15px;
+            margin-top: 10px;
+            display: flex;
+            margin-bottom: 15px;
+            svg {
+                width: 40px;
+                height: 40px;
+            }
+            img {
+                border-radius: 25%;
+            }
+        }
+        &-link {
+            margin-right: 5px;
+        }
+
+    }
+
+    &__positions {
+        background-color: $second-color;
+        border-radius: 15px;
+        margin-right: 20px;
+        padding: 15px;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    &__email {
+        margin-top: 8px;
+        background-color: $second-color;
+        border-radius: 15px;
+        margin-right: 20px;
+        padding: 15px;
+        color: #fff;
+        font-weight: 700;
+    }
+
+  
+    &__description {
+        background-color: $main-color;
+        margin-left: 25px;
+        width: 40%;
+        height: 100%;
+        border-radius: 25px;
+        padding: 25px;
+        color: #fff;
+        font-weight: 500;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .profile {
+        &__info {
+            width: 90%;
+        }
+        &__description {
+            width: 85%;
+            margin-left: 0;
+        }
+        &__image {
+            width: 100px;
+        }
+        &__positions {
+            margin-right: 0;
+        }
+        &__email {
+            margin-right: 0;
+        }
+        &__description {
+            margin-left: 0;
+        }
+    }
+}
+
+
+@media (max-width: 340px) {
+
+}

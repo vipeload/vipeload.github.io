@@ -1,31 +1,58 @@
 .contacts {
     padding: 0 0 40px 0;
+
     &__card {
+        display: flex;
+        flex-direction: wrap;
         background-color: $main-color;
         border-radius: 15px;
         width: 30%;
-        height: 100px;
+        height: auto;
         margin: 0 auto;
         padding: 15px;
-        &-email {
-            color: #fff;
+        &-image {
+            img {
+                width: 120px;
+                border-radius: 25%;
+            }
+            margin-bottom: 15px;
+        } 
+        &-info {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
             a {
-                color: #8c8c8c;
-                margin-bottom: 10px;
+                color: #fff;
             }
         }
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .contacts__card {
-        width: 85%;
+        width: 90%;
+        &-image {
+            img {
+                width: 90px;
+            }
+        }
+        &-info {
+            padding: 15px;
+        }
     }
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 340px) {
     .contacts__card {
         width: 95%;
+        &-image {
+            img {
+                width: 90px;
+            }
+        }
+        &-info {
+            padding: 15px;
+        }
     }
 }

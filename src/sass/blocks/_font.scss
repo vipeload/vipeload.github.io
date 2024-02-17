@@ -14,6 +14,9 @@
     &_14 {
         font-size: 16px;
     }
+    &_descr {
+        font-size: 16px;
+    }
 }
 
 
@@ -29,11 +32,41 @@
         &_20 {
             font-size: 18px;
         }
+        &_18 {
+            font-size: 18px;
+        }
+        &_16 {
+            font-size: 16px;
+        }
+        &_14 {
+            font-size: 14px;
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    .font {
+        &_38 {
+            font-size: 24px;
+        }
+        &_28 {
+            font-size: 18px;
+        }
+        &_20 {
+            font-size: 15px;
+        }
+        &_18 {
+            font-size: 16px;
+        }
         &_16 {
             font-size: 14px;
         }
         &_14 {
-            font-size: 10px;
+            font-size: 12px;
+        }
+        &_descr {
+            font-size: 0.8rem;
         }
     }
 }
