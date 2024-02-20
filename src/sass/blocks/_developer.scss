@@ -1,4 +1,5 @@
 .profile {
+    margin: 0 auto;
     padding: 0 0 20px 0;
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +23,7 @@
   
     &__social { 
         &-icons {
-            background-color: #ffffff13;
+            background-color: $second-color;
             width: auto;
             border-radius: 35px;
             padding: 15px;
@@ -49,7 +50,9 @@
         margin-right: 20px;
         padding: 15px;
         color: #fff;
-        font-weight: 700;
+        &-item {
+            font-weight: 700;
+        }
     }
 
     &__email {
@@ -62,7 +65,20 @@
         font-weight: 700;
     }
 
-  
+    &__kicked {
+        text-align: center;
+        margin-top: 8px;
+        width: 30%;
+        background-color: $second-color;
+        border-radius: 15px;
+        margin-right: 20px;
+        padding: 15px;
+        color: red;
+        &-item {
+            font-weight: 700;
+        }
+    }
+
     &__description {
         background-color: $main-color;
         margin-left: 25px;
