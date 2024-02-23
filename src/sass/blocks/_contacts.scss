@@ -3,7 +3,7 @@
 
     &__card {
         display: flex;
-        flex-direction: wrap;
+        flex-direction: column;
         background-color: $main-color;
         border-radius: 15px;
         width: 30%;
@@ -13,14 +13,34 @@
         &-image {
             img {
                 width: 120px;
-                border-radius: 25%;
+                border-radius: 20px;
             }
             margin-bottom: 15px;
         } 
+        &-text {
+            background-color: $second-color;
+            border-radius: 15px;
+            padding: 10px;
+            color: #fff;
+        }
         &-info {
-            padding: 25px;
+            margin-top: 5px;
+            padding: 5px;
+            background-color: $second-color;
+            border-radius: 15px;
+        }
+        &-email {
+            margin-top: 10px;
+            margin-left: 5px;
             display: flex;
-            flex-direction: column;
+            a {
+                color: #fff;
+            }
+        }
+        &-social {
+            margin-top: 10px;
+            margin-left: 5px;
+            display: flex;
             a {
                 color: #fff;
             }
@@ -33,11 +53,8 @@
         width: 90%;
         &-image {
             img {
-                width: 90px;
+                width: 100px;
             }
-        }
-        &-info {
-            padding: 15px;
         }
     }
 }
@@ -46,13 +63,5 @@
 @media (max-width: 340px) {
     .contacts__card {
         width: 95%;
-        &-image {
-            img {
-                width: 90px;
-            }
-        }
-        &-info {
-            padding: 15px;
-        }
     }
 }

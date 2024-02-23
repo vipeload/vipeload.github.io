@@ -26,7 +26,7 @@
 <body>	
     <header class="header">
         <div class="header__logo">
-            <a href="/"><img src="img/vipeload-no-bg.png" alt=""></a>
+            <a href="/"><img src="img/vipeload-no-bg.png" alt="vipeload logo"></a>
         </div>
     </header>
 
@@ -126,11 +126,23 @@
         <div class="conatiner">
             <div class="contacts__card font_18">
                 <div class="contacts__card-image">
-                    <img width="300" src="img/vipeload.jpeg" alt="">
+                    <img width="300" src="img/vipeload.jpeg" alt="vipeload logo">
+                </div>
+                <div class="contacts__card-text font_16">
+                    Мы - маленькое сообщество начинающих программистов, увлекаемся созданием разнообразных проектов и делаем первые шаги в разработке
                 </div>
                 <div class="contacts__card-info">
-                    <a class="contacts__card-info-item" href="mailto:info@uzyanbaev-dev.ru" class="contact-card-link">vipeload@gmail.com</a>
-                    <a class="contacts__card-info-item" href="https://t.me/+rsO0E08pcx9lNzAy" class="contact-card-link">telegram channel</a>
+                    <div class="contacts__card-social">
+                        <a href="https://t.me/+rsO0E08pcx9lNzAy" class="contact-card-link">
+                            <img width="32" src="img/social/telegram.png" alt="telegram">
+                        </a>
+                        <a href="https://discord.gg/Sr4zheqJnD" class="contact-card-link">
+                            <img width="32" src="img/social/discord.png" alt="discord">
+                        </a>
+                    </div>
+                    <div class="contacts__card-email">
+                        <a href="mailto:vipeload@gmail.com" class="contact-card-link">✉️ vipeload@gmail.com</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,9 +150,15 @@
 
     
     <div class="navbar">
-        <button class="tablink active font_14" onclick="openPage('games', event)">Игры</button>
-        <button class="tablink font_14" onclick="openPage('developers', event)">Люди</button>
-        <button class="tablink font_14" onclick="openPage('contacts', event)">Контакты</button>        
+        <button class="tablink active font_14" onclick="openPage('games', event)">
+            <img width="35" src="img/navbar/games.png" alt="games tab">
+        </button>
+        <button class="tablink font_14" onclick="openPage('developers', event)">
+            <img width="35" src="img/navbar/people.png" alt="people tab">
+        </button>
+        <button class="tablink font_14" onclick="openPage('contacts', event)">
+            <img width="35" src="img/navbar/contacts.png" alt="contacts tab">
+        </button>
     </div>
     
 
